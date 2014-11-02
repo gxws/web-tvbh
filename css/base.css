@@ -17,7 +17,7 @@ html,
 body{height:100%;}
 body,
 a{color:#333;}
-body{font-family:'/9ED1/4F53',simhei;background:#dcc8b4;position:relative;}
+body{font-family:'/9ED1/4F53',simhei;background:#dcc8b4;position:relative;overflow:hidden;}
 body:after{content:'';width:110px;height:30px;position:absolute;right:10px;bottom:10px;background:url(../images/watermark_640.jpg) no-repeat;}
 a:hover{text-decoration:none;}
 @media screen and (min-width:1280px){
