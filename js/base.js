@@ -7,14 +7,14 @@
 /**
  * 基础模块
  * @module base
- * @since p51
+ * @since p94
  */
 (function(window, undefined){
 
 	/**
 	 * 基础模块 - 交互逻辑
 	 * @class base
-	 * @since p51
+	 * @since p94
 	 */
 	var	$win	= $(window),
 		$doc	= $(document),
@@ -111,7 +111,69 @@
 	
 
 /**************************** END p51 ****************************/
-
+/**************************** BEGIN p94 ****************************/
+	/**
+	 * 初始化事件
+	 * @method base.events
+	 * @since p51
+	 * @return {none}
+	 */
+	init.P94events = function(){
+		$doc.on('click','.J_j_checkbox',function(){
+			var $this = $(this),
+			    $smt  = $('.J_j_smt'),
+			    $input = $smt.find('input'),
+			    $noBtn = $smt.find('.disabled'),
+			    tag = $this.hasClass('on');
+			$this[tag ? 'removeClass' : 'addClass']('on').siblings('input[type=checkbox]').prop('checked',!tag)
+			$input.css({display: tag ? 'none' : 'inline-block'});
+			$noBtn.css({display: tag ? 'inline-block' : 'none'});
+		}).on('click','.J_j_radio_btn',function(){
+			var $this  = $(this),
+			    $active = $('.J_j_ac').find('.active');
+			if($active.size()){
+				if($this.hasClass('active')) return;
+				base.gSum($this)
+				$this.addClass('active');
+				$active.removeClass('active');
+			}
+		});
+		base.gSum($('.J_j_radio_btn').eq(0))
+	}
+/**
+ * 加载中动画
+ * @method base.dIan
+ * @since p94
+ * @return {none}
+ */
+	init.dIan = function(){//加载中动画
+		var $dian = $('.J_j_dian'),
+				i = 0,
+				str='.';
+		if($dian.size()){
+			timer = setInterval(function(){
+				i++;
+				str+='.';
+				if(i>5){
+					str='.';
+					i=0;
+				}
+				$dian.text(str);
+			},500);
+		}
+	}
+/**
+ * 页面加载获取默认金额
+ * @method base.gSum
+ * @since p94
+ * @return {none}
+ */
+	base.gSum = function($obj){
+		var $dfn  = $obj.find('.money'),
+		    $val  = $(' input[data-type=val]');
+		$val && $val.attr('name',$dfn.attr('data-name')).attr('value',$dfn.attr('data-value'));
+	}
+/**************************** END p94 ****************************/
 	return $.extend(base, $.loader(init));
 
 })(window);
