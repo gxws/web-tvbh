@@ -466,13 +466,13 @@ body:after{width:160px;height:45px;background-image:url(../images/watermark_1280
 .c_list { margin-top:15px;}
 .c_p94bli .c_bbox { background:url(../images/blists_bg_03.png) 0 0 no-repeat; width:500px; height:99px; line-height:24px;}
 .c_p94bli .c_bbox:hover { background-position: 0 -99px;}
-.c_p94bli .c_bbox .li1 { font-size:20px; width:395px; height:44px; line-height:44px; float:left; padding-left:15px;}
+.c_p94bli .c_bbox .li1 { font-size:20px; width:390px; height:44px; line-height:44px; float:left; padding-left:15px;}
 .c_p94bli .c_bbox .li2 { font-size:24px; overflow:hidden; height:44px; line-height:44px;}
-.c_p94bli .c_bbox .li2 span{ color:#c80000;}
+.c_p94bli .c_bbox .li2 span{ color:#c80000; font-size:26px;}
 .c_p94bli .c_bbox .li3 { font-size:16px; line-height:16px; padding: 10px 14px; color:#787878;}
-.c_p94titip { color:#0a0a0a; font-size:18px;}
+.c_p94titip { color:#c80000; font-size:18px;}
 .c_p94title { height:30px; margin-top:57px; line-height:36px;}
-.c_p94title .c_rec_title { float:left; width:144px; margin-top:0px;}
+.c_p94title .c_rec_title { float:left; width:130px; margin-top:0px;}
 .j_control .c_index { background:url(../images/002_inguandian_01.png) 0 0 no-repeat; width:160px;}
 .j_control .c_myac { background:url(../images/002_inmyacc_01.png) 0 0 no-repeat; width:160px;}
 .j_control .c_isok { background:url(../images/002_isok_01.png) 0 0 no-repeat; width:160px;}
@@ -488,10 +488,11 @@ body:after{width:160px;height:45px;background-image:url(../images/watermark_1280
 .c_p94bli .c_bbox:hover { background-position: 0 -142px;}
 .c_p94bli .c_bbox .li1 { font-size:30px; width:850px; height:56px; line-height:66px; padding-left:24px;}
 .c_p94bli .c_bbox .li2 { font-size:36px; height:56px; line-height:66px;}
+.c_p94bli .c_bbox .li2 span{ font-size:36px;}
 .c_p94bli .c_bbox .li3 { font-size:24px; line-height:28px; padding: 10px 24px;}
 .c_p94titip { font-size:24px;}
 .c_p94title { height:42px; margin-top:57px; line-height:50px;}
-.c_p94title .c_rec_title { width:532px;}
+.c_p94title .c_rec_title { width:520px;}
 .j_control .c_index { background:url(../images/003_inguandian_01.png) 0 0 no-repeat; width:306px;}
 .j_control .c_myac { background:url(../images/003_inmyacc_01.png) 0 0 no-repeat; width:306px;}
 .j_control .c_isok { background:url(../images/003_isok_01.png) 0 0 no-repeat; width:173px;}
@@ -576,7 +577,7 @@ body:after{width:160px;height:45px;background-image:url(../images/watermark_1280
 .j_order .x_form .row p{font-size:22px;}
 .j_order .x_form .row p .dm {margin-right:20px;text-align: center;width:127px;height:74px;display:inline-block;background:url(../images/002_denomination_03.jpg) 0 0 no-repeat;}
 .j_order .x_form .row p .dm:focus{background:url(../images/002_denomination_focus_05.png) 0 0 no-repeat;}
-.j_order .x_form .row p .active{background:url(../images/002_active_btn_03.png) 4px 4px no-repeat;}
+.j_order .x_form .row p .active{background:url(../images/002_active_btn_03.png) 1px 1px no-repeat;}
 .j_order .dm dfn{display:block;line-height:24px;color:#fff;}
 .j_order .dm .money{font-size:26px;padding-top:15px;}
 .j_order .dm .info{font-size:20px;}
@@ -612,7 +613,7 @@ body:after{width:160px;height:45px;background-image:url(../images/watermark_1280
 .j_order .x_form .row p{font-size:44px;}
 .j_order .x_form .row p .dm {margin-top:0;margin-right:30px;width:206px;height:119px;background:url(../images/003_denomination_01.png) 0 0 no-repeat;}
 .j_order .x_form .row p .dm:focus{background:url(../images/003_denomination_01.png) 0 -119px no-repeat;}
-.j_order .x_form .row p .active{background:url(../images/003_active_btn_03.png) 4px 4px no-repeat;}
+.j_order .x_form .row p .active{background:url(../images/003_active_btn_03.png) 1px 1px no-repeat;}
 .j_order .dm dfn{display:block;line-height:40px;color:#fff;}
 .j_order .dm .money{font-size:36px;padding-top:20px;}
 .j_order .dm .info{font-size:28px;}
