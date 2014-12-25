@@ -32,7 +32,8 @@
 	 * @return {none}
 	 */
 	init.events = function(){
-		/*
+
+		$('.J_c_focus').focus();		
 		$doc.on('keydown', function(e){	//按键功能
 			//alert(e.keyCode);
 			switch(e.keyCode){
@@ -44,7 +45,7 @@
 					break;
 			}
 		});
-		*/
+		
 	};
 
 	/**
@@ -111,11 +112,12 @@
 	
 
 /**************************** END p51 ****************************/
+
 /**************************** BEGIN p94 ****************************/
 	/**
 	 * 初始化事件
 	 * @method base.events
-	 * @since p51
+	 * @since p94
 	 * @return {none}
 	 */
 	init.P94events = function(){
@@ -174,6 +176,31 @@
 		$val && $val.attr('name',$dfn.attr('data-name')).attr('value',$dfn.attr('data-value'));
 	}
 /**************************** END p94 ****************************/
+
+/**************************** BEGIN p95 ****************************/
+	/**
+	 * 初始化事件
+	 * @method base.events
+	 * @since p95
+	 * @return {none}
+	 */
+	init.P95events = function(){
+		$doc.on('click','.J_c_p95con',function(){
+			var $this = $(this);
+			$this.addClass('onti');
+			$('.J_c_p95probox').css('display','none');
+			$('.J_c_p95conbox').css('display','block');
+			$('.J_c_p95pro').removeClass('onti');
+		}).on('click','.J_c_p95pro',function(){
+			var $this = $(this);
+			$this.addClass('onti');
+			$('.J_c_p95conbox').css('display','none');
+			$('.J_c_p95probox').css('display','block');
+			$('.J_c_p95con').removeClass('onti');
+		});
+	}
+/**************************** END p95 ****************************/
+
 	return $.extend(base, $.loader(init));
 
 })(window);
