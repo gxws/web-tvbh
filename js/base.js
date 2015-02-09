@@ -37,12 +37,12 @@
 		$doc.on('keydown', function(e){	//按键功能
 			//alert(e.keyCode);
 			switch(e.keyCode){
-				case 48:	//0刷新当前页面
-					loc.reload();
-					break;
-				case 57:
-					loc.href = 'index.html';	//9跳转至列表页
-					break;
+				// case 48:	//0刷新当前页面
+				// 	loc.reload();
+				// 	break;
+				// case 57:
+				// 	loc.href = 'index.html';	//9跳转至列表页
+				// 	break;
 			}
 		});
 		
