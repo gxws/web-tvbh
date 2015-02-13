@@ -1,0 +1,118 @@
+# !/bin/sh
+# 设置函数(主函数)
+function shezhi(){
+clear
+
+# 分支验证函数
+function branchs(){
+	nowbranch=`git branch`
+	echo "$nowbranch" > ./branch.txt
+	branchsame=`grep "$1" ./branch.txt`
+	if [ -z "$1" ]; then
+		test="min"
+		echo "使用默认min分支"
+		rm -rf ./branch.txt
+		echo
+		echo
+		return
+	elif [ -z "$branchsame" ];then
+		echo "当前分支不存在,请重新输入要切换的分支"
+		read test
+		branchs $test
+	else
+		echo "成功选择$1分支"
+		rm -rf ./branch.txt
+		echo
+		echo
+		return
+	fi
+}
+
+# 请求用户输入需要切换的分支
+echo "~~~~~~~~已有分支~~~~~~~~"
+git branch
+echo "~~~~~~~~~~~~~~~~~~~~~~~~"
+echo "请选择要切换的分支,直接回车默认min分支"
+read test
+branchs $test
+
+# commit验证函数
+function committest(){
+if [ -z "$1" ];then
+	echo "commit不能为空"
+	read commit
+	committest $commit
+else
+	echo "commit验证通过"
+	echo
+	echo
+fi
+}
+
+#请求用户输入commit
+echo "请输入commit(例如:add XXX)"
+read commit
+committest $commit
+
+# gittag验证函数
+function gittagtest(){
+gittest=`git tag`
+echo "$gittest" > ./gittag.txt
+same=`grep "$1" ./gittag.txt`
+if [ -z "$1" ];then
+	echo "tag不能为空"
+	read tags
+	gittagtest $tags
+elif [ -z "$same" ];then
+	echo "tag验证通过"
+	echo
+	echo
+	rm -rf ./gittag.txt
+	return
+else
+	echo "已有同名的tag"
+	read tags
+	gittagtest $tags
+fi
+}
+# 请求用户输入tag
+echo "~~~~~~~~~~~已有tag~~~~~~~~~~~~"
+git tag
+echo "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+echo "请根据上述已有tag输入当前tag"
+read tags
+gittagtest $tags
+
+clear
+echo "~~~~~~~~当前设置~~~~~~~~"
+echo "选择分支:    $test"
+echo "commit:      $commit"
+echo "tag:         $tags"
+echo "~~~~~~~~~~~~~~~~~~~~~~~~"
+echo
+echo
+echo "请确认以上输入是否正确,按y继续,按其他任意键重新设置,按ctrl+C强制退出"
+read sure
+if [ $sure == "y" ] || [ $sure == "Y" ];then
+	git checkout $test
+	svn up
+	cat ../nohup.out
+	echo
+	echo
+	echo "请确认压缩是否出错,按y确定继续,按其他任意键退出"
+	read nowgoon
+	if [ $nowgoon == "Y" ] || [ $nowgoon == "y" ];then
+		git add .
+		git commit -am "$commit"
+		git tag $tags
+		git push origin $test
+		echo "请求执行完成,感谢使用"
+	else
+		echo "脚本终止,感谢使用"
+		exit 1
+	fi
+else
+	shezhi
+fi
+}
+shezhi	
