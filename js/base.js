@@ -61,7 +61,7 @@
 			$lis	= $f.find('ul li'),
 			$p		= $f.find('p'),
 			size	= $lis.size(),
-			speed	= 3000
+			speed	= 5000
 			html	= '';
 		$lis.each(function(){
 			html	+= '<span></span>';
