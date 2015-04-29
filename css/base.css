@@ -707,15 +707,15 @@ body:after{font-size:26px;width:220px;height:45px;right:50px;bottom:20px;}
 .j_cards .cards a.c5{background:url(../images/002_bankcard_03.png) 0 0 no-repeat;}
 .j_cards .cards a.c5:focus,
 .j_cards .cards a.c5:hover{background:url(../images/002_bankcard_03.png) -172px 0 no-repeat;}
-.j_cards{font-weight:500;font-size:20px;}
-.j_cards span{font-size:25px;}
+.j_cards{font-size:20px;}
+.j_cards span{font-size:18px;display:inline-block;margin-top:10px;font-weight:500;}
 @media (min-width:1280px){ 
 .j_cards .cards a{margin:0 10px;}
 .j_cards .cards a.c5{background:url(../images/003_bankcard_03.png) 0 0 no-repeat;}
 .j_cards .cards a.c5:focus,
 .j_cards .cards a.c5:hover{background:url(../images/003_bankcard_03.png) -320px 0 no-repeat;}
 .j_cards{font-size:30px;}
-.j_cards span{font-size:36px;}
+.j_cards span{font-size:28px;margin-top:15px;}
 }
 
 /*c*/
