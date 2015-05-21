@@ -554,6 +554,7 @@ body:after{font-size:26px;width:220px;height:45px;right:50px;bottom:20px;}
 .k_tishi .data .last{margin:0;}
 .k_tishi .clock{display:block;width:154px;height:187px;margin:40px auto 10px;background:url(../images/bg_k_clock_640.png) 0 0 no-repeat;}
 .k_tishi .wait{font-size:30px;line-height:54px;height:54px;padding:0}
+.k_tishi .tiplist{font-size:22px;line-height:30px;height:169px;width:530px;color:#6e3c14;margin:0 auto;padding:0;}
 .k_tishi .dian{text-align:left;padding-left:126px;}
 .k_tishi .dians{text-align:left;padding-left:126px;}
 .x_entrances.rechargebtn{padding:0;}
@@ -593,6 +594,7 @@ body:after{font-size:26px;width:220px;height:45px;right:50px;bottom:20px;}
 .k_btn.rechargebtn{padding-top:45px;}
 .k_tishi .clock{width:217px;height:261px;margin:28px auto 30px;background:url(../images/bg_k_clock_1280.png) 0 0 no-repeat;}
 .k_tishi .wait{font-size:40px;line-height:94px;height:94px;margin-bottom:8px;}
+.k_tishi .tiplist{font-size:40px;line-height:50px;height:200px;width:1080px;}
 .k_tishi .dian{padding-left:453px;}
 .k_tishi .dians{padding-left:461px;}
 .k_tishi .tishitext{padding-top:146px;width:930px;height:255px;font-size:39px;}
