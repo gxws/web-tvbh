@@ -42,6 +42,7 @@ body:after{clear:both;display:block;font-size:18px;color:#867665;content:"客服
 body.logo:before{width:160px;height:45px;background-image:url(../images/watermark_1280.jpg);left:20px;bottom:20px;}
 body:after{font-size:26px;width:220px;height:45px;right:50px;bottom:20px;}
 }
+
 /* x_btn */
 .x_btn{display:inline-block;vertical-align:middle;border:0;padding:0;margin:0;font-size:12px;text-align:center;position:relative;overflow:hidden;zoom:1;cursor:pointer;}
 .x_btn_20{height:20px;line-height:20px;}
