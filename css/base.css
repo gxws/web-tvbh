@@ -22,12 +22,6 @@ body {height:526px;}
 @media (min-width:1280px){
 body{height:720px;} 
 }
-body.logo:before{display:block;content:" ";width:110px;height:30px;position:absolute;left:10px;bottom:10px;background:url(../images/watermark_640.jpg) no-repeat;}
-body:after{clear:both;display:block;font-size:18px;color:#867665;content:"客服热线：96335";width:150px;height:30px;position:absolute;right:15px;bottom:10px;text-align:right;}
-@media screen and (min-width:1280px){
-body.logo:before{width:160px;height:45px;background-image:url(../images/watermark_1280.jpg);left:20px;bottom:20px;}
-body:after{font-size:26px;width:220px;height:45px;right:50px;bottom:20px;}
-}
 /* public */
 .red{color:red;}
 .j_btn a{min-width:110px;line-height:50px;height:50px;display:inline-block;}
