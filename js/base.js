@@ -201,6 +201,67 @@
 	}
 /**************************** END p95 ****************************/
 
+/**************************** BEGIN p134 ****************************/
+	/**
+	 * 初始化事件
+	 * @method base.events
+	 * @since p134
+	 * @return {none}
+	 */
+	init.P134events = function(){
+		$doc.on('click','.J_c_p134con a',function(){
+			var $this = $(this),
+				sib = $(this).siblings('.hidden').val();
+			if(sib == 1){
+				$('.J_c_outcome').text('0个月');
+			}
+			else{
+				$('.J_c_outcome').text(Math.floor(sib/2)+'个月');
+			}
+		});
+	}
+
+	/**
+	 * 焦点图
+	 * @method base.focus
+	 * @since p134
+	 * @return {none}
+	 */
+	init.J_c_focus = function(){
+		if(!$('.J_c_focus').size())return false;
+		var $spans, _run, index,
+			$f		= $('.J_c_focus'),
+			$lis	= $f.find('ul li'),
+			$p		= $f.find('p'),
+			size	= $lis.size(),
+			speed	= 5000,
+			html	= '';
+		$lis.each(function(){
+			html	+= '<a href="javascript:;"><img src="'+ $(this).children('img').attr('src') +'" /><div class="bg"></div></a>';
+		});
+		$p.html(($spans = $(html)));
+		(_run = function(){
+			var j = index === undefined ? 0 : (index + 1) % size;
+			$lis.eq(j).show().siblings('li').hide();
+			$spans.eq(j).find('.bg').addClass('bgon').parent('a').siblings('a').find('.bg').removeClass('bgon');
+			index = j;
+			t = setTimeout(_run, speed);
+		})();
+		$('.p134_picbox a').on('click',function(){
+			var $index = $(".p134_picbox a").index(this);
+			$lis.eq($index).show().siblings('li').hide();
+			$(this).find('.bg').addClass('bgon').parent('a').siblings('a').find('.bg').removeClass('bgon');
+			clearTimeout(t);
+			//j = $index;
+			//alert(j)
+			setTimeout(_run, speed);
+		});
+	};
+
+/**************************** END p134 ****************************/
+
+
+
 	return $.extend(base, $.loader(init));
 
 })(window);
