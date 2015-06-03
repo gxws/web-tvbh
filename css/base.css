@@ -985,7 +985,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 
 @media (min-width:1280px){
 .j_info .row{margin-left:391px;font-size:40px;height:247px;padding-left:165px;background:url(../images/p134_Prompt_name_HD_03.png) 0 0 no-repeat;}
-.j_info .row .limt{height:60px;line-height:43px;margin-bottom:10px;margin-left:28px;}
+.j_info .row .limt {height:60px;line-height:43px;margin-bottom:10px;margin-left:28px;}
 .j_info .k_tishi i.success2_1{margin-top:10px;height:70px;background:url(../images/bg_x_tishi_i_success_640_2.png) 50% 0 no-repeat;}
 .j_info .k_tishi i.success2_2{height:160px;margin-top:30px;}
 .j_info .x_entrances.tishi{padding-top:10px;}
