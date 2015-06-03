@@ -254,7 +254,7 @@
 			clearTimeout(t);
 			//j = $index;
 			//alert(j)
-			setTimeout(_run, speed);
+			setTimeout(_run);
 		});
 	};
 
