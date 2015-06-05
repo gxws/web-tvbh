@@ -189,7 +189,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 /* x_dinggou */
 .x_dinggou{padding:57px 50px 0;}
 .x_dinggou h3{height:30px;background:url(../images/bg_x_dinggou_h3_640.png) no-repeat 0 0;border-bottom:3px solid #6f4017;}
-.x_dinggou .x_form{padding-top:55px;}
+.x_dinggou .x_form{padding-top:35px;}
 .x_dinggou .x_form .row{padding-top:20px;}
 .x_dinggou .x_form .row em{float:left;width:172px;margin-right:16px;background:url(../images/bg_x_dinggou_rows_640.png) no-repeat;height:36px;}
 .x_dinggou .x_form .row em.r1{background-position:100% 6px;}
@@ -215,7 +215,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 @media screen and (min-width:1280px){
 .x_dinggou{padding:75px 110px 0;}
 .x_dinggou h3{height:46px;background:url(../images/bg_x_dinggou_h3_1280.png) no-repeat 0 0;border-bottom:4px solid #6f4017;}
-.x_dinggou .x_form{padding-top:50px;}
+.x_dinggou .x_form{padding-top:30px;}
 .x_dinggou .x_form .row{padding-top:30px;}
 .x_dinggou .x_form .row em{width:362px;margin-right:27px;background:url(../images/bg_x_dinggou_rows_1280.png) no-repeat;height:54px;}
 .x_dinggou .x_form .row em.r1{background-position:100% 6px;}
@@ -229,7 +229,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .x_dinggou .x_form .row p a.add{background-position:0 -100px;}
 .x_dinggou .x_form .row p a.add:hover{background-position:0 -150px;}
 .x_dinggou .x_form .row p span{width:80px;}
-.x_dinggou .x_form .smt{padding-top:68px;}
+.x_dinggou .x_form .smt{padding-top:40px;}
 .x_dinggou .x_form .smt input,
 .x_dinggou .x_form .smt a{width:175px;height:79px;margin:0 6px;background:url(../images/bg_x_dinggou_smt_1280.png) no-repeat;}
 .x_dinggou .x_form .smt input{background-position:0 0;}
