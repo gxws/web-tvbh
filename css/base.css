@@ -659,6 +659,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 
 /* j_order */
 .j_order h3{background:url(../images/002_dinggou_h3_03.png) 0 0 no-repeat;}
+.j_order h3.result{background:url(../images/002_dinggou_h3_04.png) 0 0 no-repeat;}
 .j_order .x_form{padding-top:43px;}
 .j_order .x_form .row{padding-top:15px;}
 .j_order .x_form .row em{background:url(../images/002_dinggou_name_07.png) 0 0 no-repeat;width:102px;}
@@ -696,6 +697,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .j_order .disabled{display:none;vertical-align:top;width:110px;height:50px;margin:0 8px;background:url(../images/002_no_btn_03.png) 0 0 no-repeat;}
 @media (min-width:1280px){
 .j_order h3{background:url(../images/003_dinggou_h3_03.png) 0 0 no-repeat;}
+.j_order h3.result{background:url(../images/003_dinggou_h3_04.png) 0 0 no-repeat;}
 .j_order .x_form{padding-top:18px;}
 .j_order .x_form .row em{background:url(../images/003_dinggou_name_07.png) 100% 0 no-repeat;width:224px;}
 .j_order .x_form .row em.r1{background-position:100% 7px;}
