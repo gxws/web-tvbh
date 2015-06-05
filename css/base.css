@@ -552,6 +552,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .k_tishi .k_title03{background:url(../images/bg_k_tishi03_h3_640.png) 0 0 no-repeat;}
 .k_tishi .k_title04{background:url(../images/bg_k_tishi04_h3_640.png) 0 0 no-repeat;}
 .k_tishi .k_title05{background:url(../images/bg_k_tishi05_h3_640.png) 0 0 no-repeat;}
+.k_tishi .k_title06{background:url(../images/bg_k_tishi06_h3_640.png) 0 0 no-repeat;}
 .k_tishi .k_tuiding{background:url(../images/bg_k_tuiding_640.png) 0 0 no-repeat;}
 .k_tishi i.success2{background:url(../images/bg_x_tishi_i_success_640_2.png) no-repeat 50% 0;height:70px;margin-top:8px;}
 .k_tishi i.success2_1{background:url(../images/bg_x_tishi_i_success_640_2.png) no-repeat 50% 0;height:70px;margin-top:80px;}
@@ -588,6 +589,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .k_tishi .k_title03{background:url(../images/bg_k_tishi03_h3_1280.png) 0 0 no-repeat;}
 .k_tishi .k_title04{background:url(../images/bg_k_tishi04_h3_1280.png) 0 0 no-repeat;}
 .k_tishi .k_title05{background:url(../images/bg_k_tishi05_h3_1280.png) 0 0 no-repeat;}
+.k_tishi .k_title06{background:url(../images/bg_k_tishi06_h3_1280.png) 0 0 no-repeat;}
 .k_tishi .k_tuiding{background:url(../images/bg_k_tuiding_1280.png) 0 0 no-repeat;}
 .k_tishi i.success2{background:url(../images/bg_x_tishi_i_success_1280_2.png) no-repeat 50% 0;height:77px;}
 .k_tishi i.success2_1{background:url(../images/bg_x_tishi_i_success_1280_3.png) no-repeat 50% 0;height:124px;margin-top:76px;}
@@ -659,7 +661,6 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 
 /* j_order */
 .j_order h3{background:url(../images/002_dinggou_h3_03.png) 0 0 no-repeat;}
-.j_order h3.result{background:url(../images/002_dinggou_h3_04.png) 0 0 no-repeat;}
 .j_order .x_form{padding-top:43px;}
 .j_order .x_form .row{padding-top:15px;}
 .j_order .x_form .row em{background:url(../images/002_dinggou_name_07.png) 0 0 no-repeat;width:102px;}
@@ -697,7 +698,6 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .j_order .disabled{display:none;vertical-align:top;width:110px;height:50px;margin:0 8px;background:url(../images/002_no_btn_03.png) 0 0 no-repeat;}
 @media (min-width:1280px){
 .j_order h3{background:url(../images/003_dinggou_h3_03.png) 0 0 no-repeat;}
-.j_order h3.result{background:url(../images/003_dinggou_h3_04.png) 0 0 no-repeat;}
 .j_order .x_form{padding-top:18px;}
 .j_order .x_form .row em{background:url(../images/003_dinggou_name_07.png) 100% 0 no-repeat;width:224px;}
 .j_order .x_form .row em.r1{background-position:100% 7px;}
