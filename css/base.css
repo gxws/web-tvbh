@@ -149,7 +149,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 }
 
 /* x_entrances */
-.x_entrances{overflow:hidden;text-align:center;margin-top:17px;height:50px;}
+.x_entrances{overflow:hidden;text-align:center;/*margin-top:17px;*/height:50px;}
 .x_entrances a{display:inline-block;vertical-align:top;width:110px;height:50px;background:url(../images/btn640.png) no-repeat;}
 .x_entrances a.cancel{background-position:0 0;}
 .x_entrances a.cancel:hover{background-position:0 -50px;}
@@ -187,7 +187,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 }
 
 /* x_dinggou */
-.x_dinggou{padding:57px 50px 0;}
+.x_dinggou{padding:30px 50px 0;}
 .x_dinggou h3{height:30px;background:url(../images/bg_x_dinggou_h3_640.png) no-repeat 0 0;border-bottom:3px solid #6f4017;}
 .x_dinggou .x_form{padding-top:35px;}
 .x_dinggou .x_form .row{padding-top:20px;}
@@ -213,7 +213,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .x_dinggou .x_form .smt a{background-position:0 -100px;}
 .x_dinggou .x_form .smt a:hover{background-position:0 -150px;}
 @media screen and (min-width:1280px){
-.x_dinggou{padding:75px 110px 0;}
+.x_dinggou{padding:50px 110px 0;}
 .x_dinggou h3{height:46px;background:url(../images/bg_x_dinggou_h3_1280.png) no-repeat 0 0;border-bottom:4px solid #6f4017;}
 .x_dinggou .x_form{padding-top:30px;}
 .x_dinggou .x_form .row{padding-top:30px;}
@@ -229,7 +229,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .x_dinggou .x_form .row p a.add{background-position:0 -100px;}
 .x_dinggou .x_form .row p a.add:hover{background-position:0 -150px;}
 .x_dinggou .x_form .row p span{width:80px;}
-.x_dinggou .x_form .smt{padding-top:40px;}
+.x_dinggou .x_form .smt{padding-top:25px;}
 .x_dinggou .x_form .smt input,
 .x_dinggou .x_form .smt a{width:175px;height:79px;margin:0 6px;background:url(../images/bg_x_dinggou_smt_1280.png) no-repeat;}
 .x_dinggou .x_form .smt input{background-position:0 0;}
@@ -263,7 +263,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .x_chongzhi .x_form .smt a:hover{background-position:-110px -50px;}
 .x_chongzhi .x_form .tishi{text-align:center;color:#6e3c14;overflow:hidden;height:26px;line-height:26px;font-size:16px;padding-top:50px;}
 @media screen and (min-width:1280px){
-.x_chongzhi{padding:75px 110px 0;}
+.x_chongzhi{padding:50px 110px 0;}
 .x_chongzhi h3{height:46px;background:url(../images/bg_x_chongzhi_h3_1280.png) no-repeat 0 0;border-bottom:4px solid #6f4017;}
 .x_chongzhi .x_form{padding-top:40px;}
 .x_chongzhi .x_form .row{padding-top:38px;}
@@ -284,7 +284,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .x_chongzhi .x_form .smt a{background-position:0 -79px;}
 .x_chongzhi .x_form .smt input:hover{background-position:-175px 0;}
 .x_chongzhi .x_form .smt a:hover{background-position:-175px -79px;}
-.x_chongzhi .x_form .tishi{height:35px;line-height:35px;font-size:25px;padding-top:60px;}
+.x_chongzhi .x_form .tishi{height:35px;line-height:35px;font-size:25px;padding-top:30px;}
 }
 
 /* x_tishi */
@@ -297,7 +297,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .x_tishi h3{font-size:50px;height:60px;line-height:60px;}
 .x_tishi p{font-size:25px;height:35px;line-height:35px;}
 @media screen and (min-width:1280px){
-.x_tishi{padding-top:105px;}
+.x_tishi{padding-top:70px;}
 .x_tishi i{height:270px;}
 .x_tishi i.success{background:url(../images/bg_x_tishi_i_success_1280.png) no-repeat 50% 0;}
 .x_tishi i.fail{background:url(../images/bg_x_tishi_i_fail_1280.png) no-repeat 50% 0;}
@@ -306,7 +306,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 }
 
 /* x_customer */
-.x_customer{padding:57px 45px 0;}
+.x_customer{padding:30px 45px 0;}
 .x_customer h3{height:30px;background:url(../images/bg_x_customer_h3_640.png) no-repeat 0 0;border-bottom:3px solid #6f4017;}
 .x_customer .x_form{overflow:hidden;height:340px;}
 .x_customer .x_form .desc{color:#6e3c14;overflow:hidden;font-size:16px;height:26px;line-height:26px;padding-top:5px;}
@@ -319,9 +319,9 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .x_customer .x_form .row em.r5{background-position:100% -174px;}
 .x_customer .x_form .row p{overflow:hidden;zoom:1;color:#6e3c14;font-size:26px;line-height:36px;}
 @media screen and (min-width:1280px){
-.x_customer{padding:75px 110px 0;}
+.x_customer{padding:50px 110px 0;}
 .x_customer h3{height:46px;background:url(../images/bg_x_customer_h3_1280.png) no-repeat 0 0;border-bottom:4px solid #6f4017;}
-.x_customer .x_form{height:455px;}
+.x_customer .x_form{height:425px;}
 .x_customer .x_form .desc{font-size:24px;height:34px;line-height:34px;padding-top:7px;}
 .x_customer .x_form .row{padding-top:22px;}
 .x_customer .x_form .row em{width:342px;margin-right:27px;background:url(../images/bg_x_customer_rows_1280.png) no-repeat;height:50px;}
@@ -334,10 +334,10 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 }
 
 /* x_cards */
-.x_cards{padding:57px 50px 0;}
+.x_cards{padding:30px 50px 0;}
 .x_cards h3{height:30px;background:url(../images/bg_x_cards_h3_640.png) no-repeat 0 0;border-bottom:3px solid #6f4017;}
 .x_cards h3.cz{background-image:url(../images/bg_x_cards_h3_1_640.png);}
-.x_cards .cards{overflow:hidden;zoom:1;text-align:center;padding-top:44px;height:306px;}
+.x_cards .cards{overflow:hidden;zoom:1;text-align:center;padding-top:44px;height:290px;}
 .x_cards .cards a{vertical-align:top;display:inline-block;width:172px;height:256px;background:url(../images/bg_x_cards_640.png) no-repeat;margin:0 20px;}
 .x_cards .cards a.c1{background-position:0 0;}
 .x_cards .cards a.c1:hover{background-position:0 -258px;} 
@@ -348,10 +348,10 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .x_cards .cards a.c4{background-position:-522px 0;}
 .x_cards .cards a.c4:hover{background-position:-522px -258px;}
 @media screen and (min-width:1280px){
-.x_cards{padding:75px 110px 0;}
+.x_cards{padding:50px 110px 0;}
 .x_cards h3{height:46px;background:url(../images/bg_x_cards_h3_1280.png) no-repeat 0 0;border-bottom:4px solid #6f4017;}
 .x_cards h3.cz{background-image:url(../images/bg_x_cards_h3_1_1280.png);}
-.x_cards .cards{padding-top:40px;height:425px;}
+.x_cards .cards{padding-top:20px;height:400px;}
 .x_cards .cards a{width:320px;height:386px;margin:0 50px;}
 .x_cards .cards a.c1,
 .x_cards .cards a.c2{background:url(../images/bg_x_cards_1280.png) no-repeat;}
@@ -395,13 +395,13 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .j_title{border-width:4px;}
 .j_title h1{font-size:40px;}
 .j_title h1,
-.j_title div{margin-top:77px;}
+.j_title div{margin-top:50px;}
 .j_title div{height:45px;}
 }
 @media screen and (max-width:640px){
 .j_title h1{font-size:28px;}
 .j_title h1,
-.j_title div{margin-top:57px;}
+.j_title div{margin-top:30px;}
 .j_title div{height:30px;background-position:0 -46px;}
 }
 
@@ -419,9 +419,9 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .j_list span { float:left;}
 .j_list a:hover .j_order{color:#FFF;}
 @media screen and (min-width:1280px){
-.j_list{height:424px;}
+.j_list{height:410px;}
 .j_table .j_ta{text-align:left;padding:0 32px;}
-.j_list{margin-top:51px;}
+.j_list{margin-top:31px;}
 .j_table th{font-size:30px;}
 .j_table td{font-size:28px;}
 .j_table td,
@@ -442,8 +442,8 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 
 }
 @media screen and (max-width:640px){
-.j_list{min-height:324px;}
-.j_list{margin-top:45px;}
+.j_list{min-height:306px;}
+.j_list{margin-top:35px;}
 .j_table th{font-size:20px;}
 .j_table td{font-size:18px;}
 .j_table td,
@@ -525,7 +525,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 @media screen and (min-width:1280px){
 .c_p94deal p { font-size:28px; line-height:36px;}
 .c_p94deal .li { text-indent:56px;}
-.c_list { height:450px;}
+.c_list { height:440px;}
 .c_p94bli .c_bbox { background:url(../images/blist_bg_03.png) 0 0 no-repeat; width:1060px; height:142px; line-height:24px;}
 .c_p94bli .c_bbox:hover { background-position: 0 -142px;}
 .c_p94bli .c_bbox .li1 { font-size:30px; width:780px; height:56px; line-height:66px; padding-left:24px;}
@@ -714,7 +714,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .j_order .x_form .row .protocol .on{background-position:-30px 0;}
 .j_order .x_form .row .protocol .on:focus{background-position:-30px -30px;}
 .j_order .x_form .emp em{background:none;}
-.j_order .x_form .smt{padding-top:44px;}
+.j_order .x_form .smt{padding-top:28px;}
 .j_order .recharge{background:url(../images/003_xzcongzi_h3_03.png) 0 0 no-repeat;}
 .j_order .toup .row em{background:url(../images/003_toup_name_07.png) 0 0 no-repeat;width:165px;}
 .j_order .toup .row em.r1{background-position:0 10px;}
@@ -823,12 +823,12 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .j_tcxq .x_form .row em.r3{background-position:100% -106px;}
 .j_tcxq .x_form .row em.r4{background-position:100% -145px;}
 .j_tcxq .x_form .row em.r5{background-position:100% -184px;}
-.j_tcxq .j_btn{padding-top:55px;}
+.j_tcxq .j_btn{padding-top:43px;}
 .j_tcxq .j_btn .back{background:url(../images/p95_0002_xzqx_backbtn1_09.png) 0 0 no-repeat;}
 .j_tcxq .j_btn .back:focus{background:url(../images/p95_0002_xzqx_backbtn_09.png) 0 0 no-repeat;}
 @media (min-width:1280px){
 .j_tcxq h3{background:url(../images/p95_0003_tcxq_title_03.png) 0 0 no-repeat;}
-.j_tcxq .j_btn{padding-top:46px;}
+.j_tcxq .j_btn{padding-top:17px;}
 .j_tcxq .x_form .row{padding-top:10px;}
 .j_tcxq .x_form .row em{width:202px;background:url(../images/p95_0003_tcxq_name_03.png) 0 0 no-repeat;}
 .j_tcxq .x_form .row em.r3{background-position:100% -184px;}
@@ -839,7 +839,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 }
 
 /*c_p95*/
-.c_p95title { width:543px; margin:57px auto 0 auto; height:39px; overflow:hidden;}
+.c_p95title { width:543px; margin:30px auto 0 auto; height:39px; overflow:hidden;}
 .c_p95title .tibg {background-position:0 -46px; height:30px; border-bottom:3px solid #6f4017; width:314px; float:left;}
 .c_p95title .tibox { float:left; width:229px; text-align:center;}
 .c_p95title .tibox .ti { height:39px; width:106px; display:inline-block; margin:0 2px;}
