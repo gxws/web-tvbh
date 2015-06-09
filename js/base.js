@@ -234,34 +234,44 @@
 			$lis	= $f.find('ul li'),
 			$p		= $f.find('p'),
 			size	= $lis.size(),
-			speed	= 5000,
-			html	= '';
+			speed	= 7000,
+			html	= '',
+			flag    = 0;
 		$lis.each(function(){
 			html	+= '<a href="javascript:;"><img src="'+ $(this).children('img').attr('data-img') +'" /><div class="bg"></div></a>';
 		});
 		$p.html(($spans = $(html)));
 		(_run = function(){
+			flag = 1;
 			var j = index === undefined ? 0 : (index + 1) % size;
 			$lis.eq(j).show().siblings('li').hide();
 			$spans.eq(j).find('.bg').addClass('bgon').parent('a').siblings('a').find('.bg').removeClass('bgon');
 			index = j;
 			t = setTimeout(_run, speed);
-		})();
-		$('.p134_picbox a').on('click',function(){
+		})()
+		//function restart(){if(flag==0){_run()}};
+		$('.J_c_picbox a').on('click',function(){
 			var $this = $(this),
-				$index = $(".p134_picbox").find('a').index(this);
-			clearTimeout(t);
-			$this.parent('p').find('.bg').removeClass('bgon');
-			$this.find('.bg').addClass('bgon');
-			$lis.eq($index).show().siblings('li').hide();
-			setTimeout(_run);
+				$picbox = $(".J_c_picbox"),
+				$has    = $this.find('div').hasClass('bgon'),
+				$index = $picbox.find('a').index($this);
+			if($has==true){
+				return false;
+			}else{
+				clearTimeout(t);
+				//flag = 0;
+				$picbox.find('.bg').removeClass('bgon');
+				$picbox.find('.bg').eq($index).addClass('bgon');
+				$lis.eq($index).show().siblings('li').hide();
+				setTimeout(_run);
+				//restart();
+			}
 		});
 		$('.J_c_now').on('click',function(){
 			var $this = $(this);
 			clearTimeout(t);
 			$lis.eq(1).show().siblings('li').hide();
-			$this.parent('p').find('.bg').removeClass('bgon');
-			$this.find('.bg').addClass('bgon');
+			$('.J_c_picbox').find('.bg').removeClass('bgon').eq(0).addClass('bgon');
 			setTimeout(_run);
 		});
 	};
