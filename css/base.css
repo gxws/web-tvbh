@@ -98,7 +98,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .x_header h1{float:left;width:189px;height:53px;background:url(../images/logo640.png) no-repeat 0 0;position:absolute;left:28px;top:20px;}
 .x_header p{float:right;color:#0a0a0a;overflow:hidden;background:url(../images/bg_x_header_p.png) repeat-y;text-align:right;height:29px;line-height:29px;font-size:14px;width:413px;margin-top:30px;padding-right:23px;font-weight:500;}
 @media screen and (min-width:1280px){
-.x_header{height:90px;}
+.x_header{height:115px;}
 .x_header h1{width:275px;height:76px;background:url(../images/logo1280.png) no-repeat 0 0;position:absolute;left:39px;top:30px;}
 .x_header p{height:37px;line-height:37px;font-size:22px;width:880px;margin-top:40px;padding-right:44px;}
 }
