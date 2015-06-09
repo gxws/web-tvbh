@@ -947,6 +947,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .c_focus li .p134_btnbox .btn:focus{background-position:0 -60px;}
 @media (min-width:1280px){
 .x_dinggou .x_form .row em.r5{background-position:100% -190px;}
+.c_p134title .c_ywdg{background-position:0 0;}
 .j_xzqx .x_form .smt input.p134_dg{background:url(../images/003_p134_dg.png) 0 0 no-repeat;height:77px;}
 .j_xzqx .x_form .smt input.p134_dg:focus{background-position:0 -77px;}
 .c_focus>h1{left:39px;top:30px;width:275px;height:76px;background:url(../images/logo1280.png) no-repeat 0 0;}
