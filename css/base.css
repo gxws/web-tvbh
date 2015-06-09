@@ -559,7 +559,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .k_tishi i.success2_2{background:url(../images/bg_k_tishi_i_fail_640.png) no-repeat 50% 0;}
 .k_tishi i.success3{background:url(../images/bg_k_tishi_i_warning_640.png) no-repeat 50% 0;margin-top:55px;height:70px;}
 .k_tishi i.fail{background:url(../images/bg_k_tishi_i_fail_640.png) no-repeat 50% 0;height:70px;margin-top:8px;}
-.k_tishi h3{font-size:30px;height:34px;line-height:34px;margin-bottom:30px;}
+.k_tishi h3{font-size:30px;height:34px;line-height:34px;margin-bottom:20px;}
 .k_tishi h3.p95{height:50px;line-height:50px;}
 .k_tishi h3.p95_ok{margin-bottom:95px;}
 .k_tishi h3.p95_wrong{margin:0;padding-bottom:10px;}
@@ -570,6 +570,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .k_tishi .succes02{background:url(../images/bg_k_success02_640.png) 0 0 no-repeat;height:174px;width:103px;}
 .k_tishi .succes03{background:url(../images/bg_k_success03_640.png) 0 0 no-repeat;height:98px;width:103px;margin-left:156px;}
 .k_tishi .data{overflow:hidden;}
+.k_tishi .recharge {margin-bottom:10px;}
 .k_tishi .data p{text-align:left;font-size:24px;line-height:24px;height:24px;margin-bottom:14px;}
 .k_tishi .data01 p{padding-left:10px;}
 .k_tishi .data .last{margin:0;}
@@ -607,6 +608,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .k_tishi .succes{height:247px;width:165px;background:url(../images/bg_k_success_1280.png) 0 0 no-repeat;margin:0 18px 0 140px;}
 .k_tishi .succes02{background:url(../images/bg_k_success02_1280.png) 0 0 no-repeat;height:232px;width:144px;margin:0 30px 0 170px;}
 .k_tishi .succes03{background:url(../images/bg_k_success03_1280.png) 0 0 no-repeat;height:119px;width:137px;margin-left:378px;}
+.k_tishi .recharge {margin-bottom:0px;}
 .k_tishi .data p{font-size:40px;line-height:40px;height:40px;margin-bottom:30px;padding:0;}
 .k_tishi .data01 p{font-size:32px;line-height:32px;height:32px;margin-bottom:13px;padding-left:15px;}
 .k_tishi .recharge p{font-size:35px;line-height:32px;margin-bottom:10px;}
@@ -927,7 +929,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 /**************************** begin p134 ****************************/
 
 .x_dinggou .x_form .row em.r5{background-position:100% -108px;}
-.c_ywdg h3{background:url(../images/p134_0002_ywdg_title.png) 0 0 no-repeat;}
+.c_ywdg{background:url(../images/p134_0002_ywdg_title.png) 0 0 no-repeat;}
 .j_xzqx .x_form .smt input.p134_dg{background:url(../images/002_p134_dg.png) 0 0 no-repeat;}
 .j_xzqx .x_form .smt input.p134_dg:focus{background-position:0 -50px;}
 .x_dinggou .x_form .row p.col{color:#c8000a;}
@@ -945,7 +947,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .c_focus li .p134_btnbox .btn:focus{background-position:0 -60px;}
 @media (min-width:1280px){
 .x_dinggou .x_form .row em.r5{background-position:100% -190px;}
-.c_ywdg h3{background:url(../images/p134_0003_ywdg_title.png) 0 0 no-repeat;}
+.c_ywdg{background:url(../images/p134_0003_ywdg_title.png) 0 0 no-repeat;}
 .j_xzqx .x_form .smt input.p134_dg{background:url(../images/003_p134_dg.png) 0 0 no-repeat;height:77px;}
 .j_xzqx .x_form .smt input.p134_dg:focus{background-position:0 -77px;}
 .c_focus>h1{left:39px;top:30px;width:275px;height:76px;background:url(../images/logo1280.png) no-repeat 0 0;}
