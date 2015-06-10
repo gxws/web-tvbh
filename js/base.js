@@ -231,48 +231,49 @@
 		if(!$('.J_c_focus').size())return false;
 		var $spans, _run, index,
 			$f		= $('.J_c_focus'),
+			$b		= $('.J_c_btnbox'),
 			$lis	= $f.find('ul li'),
 			$p		= $f.find('p'),
 			size	= $lis.size(),
 			speed	= 7000,
 			html	= '',
-			flag    = 0;
+			demo	=	null;
 		$lis.each(function(){
 			html	+= '<a href="javascript:;"><img src="'+ $(this).children('img').attr('data-img') +'" /><div class="bg"></div></a>';
 		});
 		$p.html(($spans = $(html)));
 		(_run = function(){
-			flag = 1;
 			var j = index === undefined ? 0 : (index + 1) % size;
 			$lis.eq(j).show().siblings('li').hide();
 			$spans.eq(j).find('.bg').addClass('bgon').parent('a').siblings('a').find('.bg').removeClass('bgon');
 			index = j;
-			t = setTimeout(_run, speed);
-		})()
+			demo = setTimeout(_run, speed);
+		})();
 		//function restart(){if(flag==0){_run()}};
 		$('.J_c_picbox a').on('click',function(){
 			var $this = $(this),
 				$picbox = $(".J_c_picbox"),
 				$has    = $this.find('div').hasClass('bgon'),
-				$index = $picbox.find('a').index($this);
+				$index  = $picbox.find('a').index($this);
 			if($has==true){
 				return false;
 			}else{
-				clearTimeout(t);
-				//flag = 0;
+				clearTimeout(_run, speed);
 				$picbox.find('.bg').removeClass('bgon');
-				$picbox.find('.bg').eq($index).addClass('bgon');
+				$picbox.find('a').eq($index).find('.bg').addClass('bgon');
 				$lis.eq($index).show().siblings('li').hide();
-				setTimeout(_run);
-				//restart();
+				index == $index;
+				clearTimeout(demo);
+				demo = setTimeout(_run,speed);
 			}
 		});
 		$('.J_c_now').on('click',function(){
 			var $this = $(this);
-			clearTimeout(t);
+			clearTimeout(_run, speed);
 			$lis.eq(1).show().siblings('li').hide();
 			$('.J_c_picbox').find('.bg').removeClass('bgon').eq(0).addClass('bgon');
-			setTimeout(_run);
+			clearTimeout(demo);
+			demo = setTimeout(_run, speed);
 		});
 	};
 
