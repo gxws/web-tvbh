@@ -230,9 +230,9 @@
 	init.J_c_focus = function(){
 		if(!$('.J_c_focus').size())return false;
 		if($(window).width()<1280){
-			$('.J_c_pic1').attr('src','../static/web-tvbh/images/p134_0002_1.png');
-			$('.J_c_pic2').attr('src','../static/web-tvbh/images/p134_0002_2.png');
-			$('.J_c_pic3').attr('src','../static/web-tvbh/images/p134_0002_3.png');
+			$('.J_c_pic1').attr('src',$('.J_c_pic1').attr('data-src'));
+			$('.J_c_pic2').attr('src',$('.J_c_pic2').attr('data-src'));
+			$('.J_c_pic3').attr('src',$('.J_c_pic3').attr('data-src'));
 		}
 		var $spans, _run, index,
 			$f		= $('.J_c_focus'),
