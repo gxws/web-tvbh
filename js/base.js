@@ -249,8 +249,9 @@
 		});
 		$p.html(($spans = $(html)));
 		function txtlink(){
-			$btn.text($picbox.find('.bgon').attr('data-txt'));
-			$btn.attr('href',$picbox.find('.bgon').attr('data-link'));
+			$btn.text($picbox.find('.bgon').attr('data-txt')).attr('href',$picbox.find('.bgon').attr('data-link')).on('click',function(){
+				location.href = $(this).attr('href');
+			});
 		};
 		
 		(_run = function(){
