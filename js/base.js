@@ -289,6 +289,7 @@
 				clearTimeout(demo);
 				demo = setTimeout(_run, speed);
 				$this.text('立即充值');
+				txtlink();
 			}else{
 				return false;
 			}
