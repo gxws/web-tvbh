@@ -250,10 +250,18 @@
 		$p.html(($spans = $(html)));
 		function txtlink(){
 			$btn.text($picbox.find('.bgon').attr('data-txt')).attr('href',$picbox.find('.bgon').attr('data-link')).on('click',function(){
-				location.href = $(this).attr('href');
+				var $this = $(this);
+				if($this.text()=='立即参与'){
+					clearTimeout(_run, speed);
+					$lis.eq(0).show().siblings('li').hide();
+					$('.J_c_picbox').find('.bg').removeClass('bgon').eq(0).addClass('bgon');
+					clearTimeout(demo);
+					demo = setTimeout(_run, speed);
+					$this.text('立即充值').attr('href',$picbox.find('.bgon').attr('data-link'));
+					return false;
+				}
 			});
 		};
-		
 		(_run = function(){
 			var j = index === undefined ? 0 : (index + 1) % size;
 			$lis.eq(j).show().siblings('li').hide();
@@ -262,7 +270,6 @@
 			txtlink();
 			demo = setTimeout(_run, speed);
 		})();
-		//function restart(){if(flag==0){_run()}};
 		$('.J_c_picbox a').on('click',function(){
 			var $this = $(this),
 				$has    = $this.find('div').hasClass('bgon'),
@@ -279,21 +286,6 @@
 				demo = setTimeout(_run,speed);
 				txtlink();
 			}
-		});
-		$('.J_c_now').on('click',function(){
-			var $this = $(this);
-			if($this.text()=='立即参与'){
-				clearTimeout(_run, speed);
-				$lis.eq(0).show().siblings('li').hide();
-				$('.J_c_picbox').find('.bg').removeClass('bgon').eq(0).addClass('bgon');
-				clearTimeout(demo);
-				demo = setTimeout(_run, speed);
-				$this.text('立即充值');
-				txtlink();
-			}else{
-				return false;
-			}
-
 		});
 	};
 
