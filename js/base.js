@@ -229,30 +229,41 @@
 	 */
 	init.J_c_focus = function(){
 		if(!$('.J_c_focus').size())return false;
+		if($(window).width()<1280){
+			$('.J_c_pic1').attr('src','../static/web-tvbh/images/p134_0002_1.png');
+			$('.J_c_pic2').attr('src','../static/web-tvbh/images/p134_0002_2.png');
+			$('.J_c_pic3').attr('src','../static/web-tvbh/images/p134_0002_3.png');
+		}
 		var $spans, _run, index,
 			$f		= $('.J_c_focus'),
-			$b		= $('.J_c_btnbox'),
 			$lis	= $f.find('ul li'),
 			$p		= $f.find('p'),
+			$picbox = $f.find(".J_c_picbox"),
+			$btn	= $f.find('.J_c_btn'),
 			size	= $lis.size(),
-			speed	= 7000,
+			speed	= 5000,
 			html	= '',
 			demo	=	null;
 		$lis.each(function(){
-			html	+= '<a href="javascript:;"><img src="'+ $(this).children('img').attr('data-img') +'" /><div class="bg"></div></a>';
+			html	+= '<a href="javascript:;"><img src="'+ $(this).children('img').attr('data-img') +'" /><div class="bg" data-txt="'+ $(this).children('img').attr('data-txt') +'" data-link="'+ $(this).children('img').attr('data-link') +'"></div></a>';
 		});
 		$p.html(($spans = $(html)));
+		function txtlink(){
+			$btn.text($picbox.find('.bgon').attr('data-txt'));
+			$btn.attr('href',$picbox.find('.bgon').attr('data-link'));
+		};
+		
 		(_run = function(){
 			var j = index === undefined ? 0 : (index + 1) % size;
 			$lis.eq(j).show().siblings('li').hide();
 			$spans.eq(j).find('.bg').addClass('bgon').parent('a').siblings('a').find('.bg').removeClass('bgon');
 			index = j;
+			txtlink();
 			demo = setTimeout(_run, speed);
 		})();
 		//function restart(){if(flag==0){_run()}};
 		$('.J_c_picbox a').on('click',function(){
 			var $this = $(this),
-				$picbox = $(".J_c_picbox"),
 				$has    = $this.find('div').hasClass('bgon'),
 				$index  = $picbox.find('a').index($this);
 			if($has==true){
@@ -265,15 +276,22 @@
 				index == $index;
 				clearTimeout(demo);
 				demo = setTimeout(_run,speed);
+				txtlink();
 			}
 		});
 		$('.J_c_now').on('click',function(){
 			var $this = $(this);
-			clearTimeout(_run, speed);
-			$lis.eq(1).show().siblings('li').hide();
-			$('.J_c_picbox').find('.bg').removeClass('bgon').eq(0).addClass('bgon');
-			clearTimeout(demo);
-			demo = setTimeout(_run, speed);
+			if($this.text()=='立即参与'){
+				clearTimeout(_run, speed);
+				$lis.eq(0).show().siblings('li').hide();
+				$('.J_c_picbox').find('.bg').removeClass('bgon').eq(0).addClass('bgon');
+				clearTimeout(demo);
+				demo = setTimeout(_run, speed);
+				$this.text('立即充值');
+			}else{
+				return false;
+			}
+
 		});
 	};
 
