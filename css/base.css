@@ -947,6 +947,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .c_focus .p134_btnbox{position:absolute;left:440px;bottom:60px;}
 .c_focus .p134_btnbox .btn{background:url(../images/002_p134_btn.png) 0 0 no-repeat;width:180px;height:60px;display:block;text-align:center;line-height:60px;color:#fff;font-size:22px;}
 .c_focus .p134_btnbox .btn:focus{background-position:0 -60px;}
+.p134_bg{background:url(../images/p134_bg_640.png) 0 0 no-repeat;width:640px;height:526px;position:absolute;left:0;top:0;z-index:999;}
 @media (min-width:1280px){
 .x_dinggou .x_form .row em.r5{background-position:100% -190px;}
 .c_p134title .c_ywdg{background-position:0 0;}
@@ -961,6 +962,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .c_focus .p134_btnbox{left:950px;bottom:100px;}
 .c_focus .p134_btnbox .btn{background:url(../images/003_p134_btn.png) 0 0 no-repeat;width:279px;height:90px;line-height:90px;font-size:30px;}
 .c_focus .p134_btnbox .btn:focus{background-position:0 -90px;}
+.p134_bg{background:url(../images/p134_bg_1280.png) 0 0 no-repeat;width:1280px;height:720px;}
 }
 /* j_tckt */
 .j_tckt.pay h3{background:url(../images/p134_pay_title_03.png) 0 0 no-repeat;}

@@ -228,6 +228,11 @@
 	 * @return {none}
 	 */
 	init.J_c_focus = function(){
+		if($('.J_c_bgtime').size()){
+			setTimeout(function(){
+				$('.J_c_bgtime').removeClass('p134_bg');
+			}, 3000);
+		}
 		if(!$('.J_c_focus').size())return false;
 		if($(window).width()<1280){
 			$('.J_c_pic1').attr('src',$('.J_c_pic1').attr('data-src'));
