@@ -246,7 +246,7 @@
 			$picbox = $f.find(".J_c_picbox"),
 			$btn	= $f.find('.J_c_btn'),
 			size	= $lis.size(),
-			speed	= 5000,
+			speed	= 7000,
 			html	= '',
 			demo	=	null;
 		$lis.each(function(){
