@@ -244,7 +244,7 @@
 			$lis	= $f.find('ul li'),
 			$p		= $f.find('p'),
 			$picbox = $f.find(".J_c_picbox"),
-			$btn	= $f.find('.J_c_btn'),
+			$btnbox	= $f.find('.J_c_btnbox div'),
 			size	= $lis.size(),
 			speed	= 7000,
 			html	= '',
@@ -253,26 +253,12 @@
 			html	+= '<a href="javascript:;"><img src="'+ $(this).children('img').attr('data-img') +'" /><div class="bg" data-txt="'+ $(this).children('img').attr('data-txt') +'" data-link="'+ $(this).children('img').attr('data-link') +'"></div></a>';
 		});
 		$p.html(($spans = $(html)));
-		function txtlink(){
-			$btn.text($picbox.find('.bgon').attr('data-txt')).attr('href',$picbox.find('.bgon').attr('data-link')).on('click',function(){
-				var $this = $(this);
-				if($this.text()=='立即参与'){
-					clearTimeout(_run, speed);
-					$lis.eq(0).show().siblings('li').hide();
-					$('.J_c_picbox').find('.bg').removeClass('bgon').eq(0).addClass('bgon');
-					clearTimeout(demo);
-					demo = setTimeout(_run, speed);
-					$this.text('立即充值').attr('href',$picbox.find('.bgon').attr('data-link'));
-					return false;
-				}
-			});
-		};
 		(_run = function(){
 			var j = index === undefined ? 0 : (index + 1) % size;
 			$lis.eq(j).show().siblings('li').hide();
 			$spans.eq(j).find('.bg').addClass('bgon').parent('a').siblings('a').find('.bg').removeClass('bgon');
+			$btnbox.eq(j).show().siblings('div').hide();
 			index = j;
-			txtlink();
 			demo = setTimeout(_run, speed);
 		})();
 		$('.J_c_picbox a').on('click',function(){
@@ -286,10 +272,10 @@
 				$picbox.find('.bg').removeClass('bgon');
 				$picbox.find('a').eq($index).find('.bg').addClass('bgon');
 				$lis.eq($index).show().siblings('li').hide();
+				$btnbox.eq($index).show().siblings('div').hide();
 				index == $index;
 				clearTimeout(demo);
 				demo = setTimeout(_run,speed);
-				txtlink();
 			}
 		});
 	};
