@@ -231,7 +231,7 @@
 		if($('.J_c_bgtime').size()){
 			setTimeout(function(){
 				$('.J_c_bgtime').removeClass('p134_bg');
-			}, 3000);
+			}, 7000);
 		}
 		if(!$('.J_c_focus').size())return false;
 		if($(window).width()<1280){
