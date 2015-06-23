@@ -510,7 +510,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .c_p94bli .c_bbox .li2 span{ color:#c80000; font-size:26px; float:none;}
 .c_p94bli .c_bbox .li3 { font-size:16px; line-height:16px; padding: 10px 14px; color:#787878;}
 .c_p94titip { color:#c80000; font-size:18px;}
-.c_p94title { height:30px; margin-top:57px; line-height:36px;}
+.c_p94title { height:30px; margin-top:30px; line-height:36px;}
 .c_p94title .c_rec_title { float:left; width:130px; margin-top:0px;}
 .j_control .c_index { background:url(../images/002_inguandian_01.png) 0 0 no-repeat; width:160px;}
 .j_control .c_myac { background:url(../images/002_inmyacc_01.png) 0 0 no-repeat; width:160px;}
@@ -534,7 +534,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .c_p94bli .c_bbox .li2 span{ font-size:36px;}
 .c_p94bli .c_bbox .li3 { font-size:24px; line-height:28px; padding: 10px 24px;}
 .c_p94titip { font-size:24px;}
-.c_p94title { height:42px; margin-top:57px; line-height:50px;}
+.c_p94title { height:42px; margin-top:50px; line-height:50px;}
 .c_p94title .c_rec_title { width:520px;}
 .j_control .c_index { background:url(../images/003_inguandian_01.png) 0 0 no-repeat; width:306px;}
 .j_control .c_myac { background:url(../images/003_inmyacc_01.png) 0 0 no-repeat; width:306px;}
@@ -585,7 +585,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .k_tishi .tishitext{text-indent:2em;padding-top:120px;width:546px;height:165px;margin:0 auto;text-align:left;font-size:22px;}
 .k_tishi .k_red{color:#ff0000;}
 @media screen and (min-width:1280px){
-.k_tishi{padding-top:76px;}
+.k_tishi{padding-top:50px;}
 .k_tishi .k_title{height:49px;width:1060px;background:url(../images/bg_k_tishi_h3_1280.png) 0 0 no-repeat;}
 .k_tishi .k_title02{background:url(../images/bg_k_tishi02_h3_1280.png) 0 0 no-repeat;}
 .k_tishi .k_title03{background:url(../images/bg_k_tishi03_h3_1280.png) 0 0 no-repeat;}
