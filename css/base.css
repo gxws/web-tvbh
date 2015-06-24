@@ -436,6 +436,12 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 	height:77px;
 	background:url(../images/list_bg_03.png) 0 0;
 }
+.j_list .lib{
+	font-size:31px;
+	line-height:77px;
+	height:77px;
+	background:url(../images/list_bg_03.png) 0 0;
+}
 .j_list a:hover{background-position:0 -78px;}
 .j_list .j_name{width:658px;padding-left:70px;}
 .j_list .j_sumdate{width:173px;}
@@ -454,6 +460,12 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .j_table_cont tr{line-height:45px;}
 .j_list .j_box{width:543px;margin:0 auto;}
 .j_list a{
+	font-size:24px;
+	line-height:58px;
+	height:58px;
+	background:url(../images/lists_bg_03.png) 0 0;
+}
+.j_list .lib {
 	font-size:24px;
 	line-height:58px;
 	height:58px;
@@ -872,8 +884,11 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .c_p95meal .l5 { width:110px;}
 .c_p95list .c_p95bli { margin-top:5px; width:551px;}
 .c_p95list .c_p95bli a { margin-bottom:8px; font-size:20px; text-align:center;}
+.c_p95list .c_p95bli .lib { margin-bottom:8px; font-size:20px; text-align:center;color:#000;}
 .c_p95list .c_p95bli { color:#0050b4;}
 .c_p95list .c_p95bli a span { height:1px;}
+.c_p95list .c_p95bli .lib span { height:1px;}
+.c_p95list .c_p95bli .lib span { height:1px;}
 .c_p95list .c_p95bli .li1 { width:107px; padding-left:5px;}
 .c_p95list .c_p95bli .li2 { width:221px;}
 .c_p95list .c_p95bli .li3 { width:105px;}
@@ -907,6 +922,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .c_p95liti .l5 { width:185px;}
 .c_p95list .c_p95bli { margin-top:5px; width:1060px;}
 .c_p95list .c_p95bli a { margin-bottom:8px; font-size:30px; text-align:center; height:78px; line-height:79px;}
+.c_p95list .c_p95bli .lib { margin-bottom:8px; font-size:30px; text-align:center; height:78px; line-height:79px;}
 .c_p95list .c_p95bli .li1 { width:230px; padding-left:5px;}
 .c_p95list .c_p95bli .li2 { width:450px;}
 .c_p95list .c_p95bli .li3 { width:181px;}
