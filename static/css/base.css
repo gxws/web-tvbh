@@ -980,7 +980,7 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .c_focus .p134_picbox img{width:147px;height:84px;}
 .c_focus .p134_btnbox{left:950px;bottom:80px;}
 .c_focus .p134_btnbox .btn{background:url(../images/003_p134_btn.png) 0 0 no-repeat;width:279px;height:90px;line-height:90px;font-size:30px;}
-.c_focus .p134_btnbox .btn:focus{background-position:0 -90px;}
+.c_focus .p134_btnbox .btn:focus{background:url(../images/003_p134_btn.png) 0 -90px no-repeat;}
 .p134_bg{background:url(../images/p134_bg_1280.png) 0 0 no-repeat;width:1280px;height:720px;}
 }
 /* j_tckt */
