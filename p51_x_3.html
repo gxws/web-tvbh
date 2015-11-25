@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<!-- begin html -->
+<html>
+
+<!-- begin head -->
+<head>
+<title> 充值卡充值页 </title>
+<meta http-equiv="Content-Type" content="text/html;charset=utf-8" />
+<meta name="Author" content="xiewulong" />
+<meta name="Keywords" content="xiewulong" />
+<meta name="Description" content="xiewulong" />
+
+<!-- begin style -->
+<!-- <link rel="stylesheet" type="text/css" href="../static/public/css/public.css" />
+<link rel="stylesheet" type="text/css" href="../static/web-tvbh/css/base.css" /> -->
+<link rel="stylesheet" type="text/css" href="http://10.1.15.50:7002/web-tvbh/css/base.mod.css" />
+<!-- end style -->
+
+</head>
+<!-- end head -->
+
+<!-- begin body -->
+<body>
+
+<!-- begin x_chongzhi -->
+<div class="x_chongzhi j_x_chongzhi">
+	<h3></h3>
+	<div class="x_form">
+		<form>
+			<div class="row">
+				<em class="r1"></em>
+				<p><input type="text" class="cardno" /></p>
+			</div>
+			<div class="row">
+				<em class="r2"></em>
+				<p><input type="password" class="passwd" /></p>
+			</div>
+			<div class="row desc">
+				<em></em>
+				<p><span class="error"></span></p>
+			</div>
+			<div class="smt">
+				<input type="submit" value="" />
+				<a href="javascript:;"></a>
+			</div>
+			<div class="tishi">小提示：如充值卡是产品充值卡，在充值成功后，系统将自动为您订购该产品</div>
+		</form>
+	</div>
+</div>
+<!-- end x_chongzhi -->
+
+<!-- begin javascript -->
+<!-- <script type="text/javascript" src="../static/public/js/jquery.min.js"></script>
+<script type="text/javascript" src="../static/public/js/jquery.x.min.js"></script>
+<script type="text/javascript" src="../static/web-tvbh/js/base.js"></script>
+<script type="text/javascript" src="../static/web-tvbh/js/baseAjax.js"></script> -->
+<script type="text/javascript" src="http://10.1.15.50:7002/web-tvbh/js/base.mod.js"></script>
+<script type="text/javascript">
+(function(window, undefined){
+	//卡号密码验证
+	var $cz		= $('.j_x_chongzhi'),
+		$cardno	= $cz.find('input.cardno'),
+		$passwd	= $cz.find('input.passwd'),
+		$error	= $cz.find('.error'),
+		cardreg	= /^\d{1,15}$/,
+		pwdreg	= /^\d{1,6}$/;
+	$(document).on('click', '.j_x_chongzhi .smt input', function(){
+		if($cardno.val() == ''){
+			$error.show().text('充值卡号不能为空');
+			$cardno.focus();
+			return false;
+		}else if(!cardreg.test($cardno.val())){
+			$error.show().text('您输入的充值卡号格式有误');
+			$cardno.focus();
+			return false;
+		}else if(!pwdreg.test($passwd.val())){	
+			$error.show().text('您输入的密码格式有误');
+			$passwd.focus();
+			return false;
+		}else{
+			$error.hide();
+		}
+	});
+})(window);
+</script>
+<!-- end javascript -->
+
+</body>
+<!-- end body -->
+
+</html>
+<!-- end html -->
