@@ -960,9 +960,11 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .c_focus .p134_picbox a:focus .bg{opacity:0.4;}
 .c_focus .p134_picbox a:focus .bgon{opacity:0;}
 .c_focus .p134_picbox img{width:92px;height:50px;border:3px solid #81c9ee;}
-.c_focus .p134_btnbox{position:absolute;left:440px;bottom:60px;}
-.c_focus .p134_btnbox .btn{background:url(../images/002_p134_btn.png) 0 0 no-repeat;width:180px;height:60px;display:block;text-align:center;line-height:60px;color:#fff;font-size:22px;}
-.c_focus .p134_btnbox .btn:focus{background-position:0 -60px;}
+/*.c_focus .p134_btnbox{position:absolute;left:440px;bottom:60px;}*/
+.c_focus .p134_btnbox{position:absolute;left:440px;bottom:160px;z-index:10px;}
+/*.c_focus .p134_btnbox .btn{background:url(../images/002_p134_btn.png) 0 0 no-repeat;width:180px;height:60px;display:block;text-align:center;line-height:60px;color:#fff;font-size:22px;}*/
+.c_focus .p134_btnbox .btn{background:url(../images/002_p134_btn1.png) 0 0 no-repeat;width:187px;height:63px;display:block;text-align:center;line-height:60px;color:#fff;font-size:22px;}
+.c_focus .p134_btnbox .btn:focus{background:url(../images/002_p134_btn2.png) 0 0 no-repeat;}
 .p134_bg{background:url(../images/p134_bg_640.png) 0 0 no-repeat;width:640px;height:526px;position:absolute;left:0;top:0;z-index:999;}
 @media (min-width:1280px){
 .x_dinggou .x_form .row em.r5{background-position:100% -190px;}
@@ -971,11 +973,12 @@ body.logo:before{width:160px;height:45px;background-image:url(../images/watermar
 .j_xzqx .x_form .smt input.p134_dg:focus{background-position:0 -77px;}
 .c_focus>h1{left:39px;top:30px;width:275px;height:76px;background:url(../images/logo1280.png) no-repeat 0 0;}
 .c_focus>ul li img{width:1280px;}
+/*.c_focus .p134_picbox{left:80px;bottom:110px;}*/
 .c_focus .p134_picbox{left:80px;bottom:110px;}
 .c_focus .p134_picbox a{margin:3px;height:90px;}
 .c_focus .p134_picbox .bg{top:-90px;height:84px;width:147px;left:3px;}
 .c_focus .p134_picbox img{width:147px;height:84px;}
-.c_focus .p134_btnbox{left:950px;bottom:100px;}
+.c_focus .p134_btnbox{left:950px;bottom:80px;}
 .c_focus .p134_btnbox .btn{background:url(../images/003_p134_btn.png) 0 0 no-repeat;width:279px;height:90px;line-height:90px;font-size:30px;}
 .c_focus .p134_btnbox .btn:focus{background-position:0 -90px;}
 .p134_bg{background:url(../images/p134_bg_1280.png) 0 0 no-repeat;width:1280px;height:720px;}
