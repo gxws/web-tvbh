@@ -1,4 +1,4 @@
-@charset "utf-8";
+@charset "UTF-8";
 
 /*!
  * public
@@ -23,7 +23,7 @@ input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;
 textarea{resize:none;}
 a,:focus{outline:0;}
 a{text-decoration:none;}
-a:hover{text-decoration:underline;}
+/*a:hover{text-decoration:underline;}*/
 
 /* html,body */
 html{_text-overflow:ellipsis;font-size:12px;}
